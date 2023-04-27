@@ -9,4 +9,4 @@ cd build
 cmake ..
 cmake --build .
 ```
-Executable will be built in 'build/Debug/' folder.
+Executable will be built in 'build/' folder.
