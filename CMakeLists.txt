@@ -3,5 +3,8 @@ project (project_name)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
+find_package(OpenCV REQUIRED)
 include_directories(include)
 add_executable(helloworld src/main.cpp)
+include_directories(${OpenCV_INCLUDE_DIRS})
+target_link_libraries(helloworld ${OpenCV_LIBS})
